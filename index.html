@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" defer></script>
+  <link href="
+https://cdn.jsdelivr.net/npm/page-flip@2.0.7/src/Style/stPageFlip.min.css
+" rel="stylesheet">
+  <script src="
+https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js
+"></script>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-secondary ">
+
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+  <div class="container-fluid">
+    <div class="d-flex">
+      <!-- Navbar -->
+      <div>
+        <div>
+          <div>
+            <div id="navbar" class="vertical-navbar">
+              <nav class="navbar  navbar-expand-lg  bg-secondary-subtle  flex-column navbar-vertical"
+                id="navbarNav">
+                <!-- <img src="Adsız tasarım.png" class="img-fluid w-25" alt=""> -->
+                <div class="accordion accordion-flush mt-2 w-100" id="accordionFlushExample">
+                  <div class="d-flex justify-content-between align-items-center mt-2 mb-3">
+                    <i class="fa-solid fa-bars fa-2xl text-start ms-2"></i>
+                    <button class="buttonn">
+                      <i class="fa-sharp fa-thin fa-x fa-lg me-2" id="close"></i>
+                    </button>
+                  </div>
+                  <div class="accordion-item bg-secondary-subtle ">
+                    <div class="accordion-body ">
+                      <ul class="navbar-nav flex-column  w-100">
+                        <li class="nav-item border border-secondary-subtle">
+                          <a class="nav-link  text-center menu-item" href="#p0">Home</a>
+                        </li>
+                        <li class="nav-item border border-secondary-subtle ">
+                          <a class="nav-link text-center menu-item" href="#p3">Reseption</a>
+                        </li>
+                        <li class="nav-item border border-secondary-subtle ">
+                          <a class="nav-link text-center menu-item" href="#p3">Otağlar</a>
+                        </li>
+                        <li class="nav-item border border-secondary-subtle ">
+                          <a class="nav-link text-center menu-item" href="#p5">Digər Xidmətlərimiz</a>
+                        </li>
+                    
+                        <!-- Accordion 1 -->
+                    
+                        <div class=" nav-item border border-secondary-subtle  bg-secondary-subtle accordion-flush "
+                          id="accordionFlushExample">
+                          <div class="accordion-item border bg-secondary-subtle ">
+                            <h2 class="accordion-header  w-100">
+                              <button class="bg-secondary-subtle text-secondary-emphasis w-100" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <li class="nav-item  me-1 ms-1">
+                                  <a class="nav-link text-center " href="#about" style="font-size: 18px;">Mercure Restoran</a>
+                                </li>
+                    
+                              </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body ">
+                                <li class="nav-item e ">
+                                  <a class="nav-link text-center menu-item" href="#p7">Şorbalar</a>
+                                </li>
+                                <li class="nav-item  ">
+                                  <a class="nav-link text-center menu-item" href="#p8">Qəlyanaltılar</a>
+                                </li>
+                                <li class="nav-item  ">
+                                  <a class="nav-link text-center menu-item" href="#p9">Salatlar</a>
+                                </li>
+                                <li class="nav-item  ">
+                                  <a class="nav-link text-center menu-item" href="#p11">Əsas Yəməklər</a>
+                                </li>
+                                <li class="nav-item  ">
+                                  <a class="nav-link text-center menu-item" href="#p13">Pasta</a>
+                                </li>
+                                <li class="nav-item  ">
+                                  <a class="nav-link text-center menu-item" href="#p14">Desertler</a>
+                                </li>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <!-- Accordion 2 -->
+                    
+                          <div class=" nav-item border border-secondary-subtle  bg-secondary-subtle accordion-flush"
+                            id="accordionFlushExample">
+                            <div class="accordion-item border bg-secondary-subtle ">
+                              <h2 class="accordion-header  w-100">
+                                <button class="bg-secondary-subtle text-secondary-emphasis w-100" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  <li class="nav-item  me-1 ms-1">
+                                    <a class="nav-link text-center " href="#about" style="font-size: 18px;">Otağ Xidmətləri</a>
+                                  </li>
+                                </button>
+                              </h2>
+                    
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body ">
+                                  <li class="nav-item e ">
+                                    <a class="nav-link text-center menu-item" href="#p16">Şorbalar</a>
+                                  </li>
+                                  <li class="nav-item  ">
+                                    <a class="nav-link text-center menu-item" href="#p17">Qəlyanaltılar</a>
+                                  </li>
+                                  <li class="nav-item  ">
+                                    <a class="nav-link text-center menu-item" href="#p18">Salatlar</a>
+                                  </li>
+                                  <li class="nav-item  ">
+                                    <a class="nav-link text-center menu-item" href="#p19">Sendviçlər</a>
+                                  </li>
+                                  <li class="nav-item  ">
+                                    <a class="nav-link text-center menu-item" href="#p20">Pizza</a>
+                                  </li>
+                                  <li class="nav-item  ">
+                                    <a class="nav-link text-center menu-item" href="#p21">Pasta</a>
+                                  </li>
+                                  <li class="nav-item  ">
+                                    <a class="nav-link text-center menu-item" href="#p22">Desertler</a>
+                                  </li>
+                                </div>
+                              </div>
+                            </div>
+                    
+                            <!-- Accordion 3 -->
+                    
+                            <div class=" nav-item border border-secondary-subtle  bg-secondary-subtle " id="accordionExample">
+                              <div class="accordion-item border bg-secondary-subtle ">
+                                <h2 class="accordion-header  w-100">
+                                  <button class="bg-secondary-subtle text-secondary-emphasis w-100" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <li class="nav-item  me-1 ms-1">
+                                      <a class="nav-link text-center " href="#about" style="font-size: 18px;">Lobby Bar</a>
+                                    </li>
+                                  </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse show" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  <div class="accordion-body ">
+                                    <li class="nav-item e ">
+                                      <a class="nav-link text-center menu-item" href="#p24">Şorbalar</a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                      <a class="nav-link text-center menu-item" href="#p25">Qəlyanaltılar</a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                      <a class="nav-link text-center menu-item" href="#p26">Desertler</a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                      <a class="nav-link text-center menu-item" href="#p28">Sendviçlər</a>
+                                    </li>
+                    
+                                  </div>
+                                </div>
+                              </div>
+                    
+                              <!-- Accordion 4 -->
+                    
+                              <div class=" nav-item border border-secondary-subtle  bg-secondary-subtle " id="accordionExample">
+                                <div class="accordion-item border bg-secondary-subtle ">
+                                  <h2 class="accordion-header  w-100">
+                                    <button class="bg-secondary-subtle text-secondary-emphasis w-100" type="button"
+                                      data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                      aria-controls="collapseFour">
+                                      <li class="nav-item  me-1 ms-1">
+                                        <a class="nav-link text-center " href="#about" style="font-size: 18px;">Bar Menu</a>
+                                      </li>
+                                    </button>
+                                  </h2>
+                                  <div id="collapseFour" class="accordion-collapse collapse show" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <div class="accordion-body ">
+                                      <li class="nav-item e ">
+                                        <a class="nav-link text-center menu-item" href="#p30">Sərinləşdirici İçkilər</a>
+                                      </li>
+                                      <li class="nav-item  ">
+                                        <a class="nav-link text-center menu-item" href="#p30">Meyvə Şirələri</a>
+                                      </li>
+                                      <li class="nav-item  ">
+                                        <a class="nav-link text-center menu-item" href="#p31">Təzə Sıxılmış Şirələr</a>
+                                      </li>
+                                      <li class="nav-item  ">
+                                        <a class="nav-link text-center menu-item" href="#p31">Soyuq çaylar & Limonadlar</a>
+                                      </li>
+                                      <li class="nav-item  ">
+                                        <a class="nav-link text-center menu-item" href="#p32">Çay & Kofe</a>
+                                      </li>
+                                      <li class="nav-item  ">
+                                        <a class="nav-link text-center menu-item" href="#p33">Kofe & Südlü Kokteyllər</a>
+                                      </li>
+                                      <li class="nav-item  ">
+                                        <a class="nav-link text-center menu-item" href="#p34">Spirtli içkilər</a>
+                                      </li>
+                                    </div>
+                                  </div>
+                                </div>
+                    
+                    
+                    
+                    
+                    
+                                <li class="nav-item border border-secondary-subtle ">
+                                  <a class="nav-link text-center menu-item" href="#p36">Mini Bar</a>
+                                </li>
+                                <li class="nav-item border border-secondary-subtle ">
+                                  <a class="nav-link text-center menu-item" href="#p37">Kıds Menu</a>
+                                </li>
+                                <li class="nav-item border border-secondary-subtle ">
+                                  <a class="nav-link text-center menu-item" href="#p39">Body Treatments</a>
+                                </li>
+                                <li class="nav-item border border-secondary-subtle ">
+                                  <a class="nav-link text-center menu-item" href="#p40">Massage</a>
+                                </li>
+                                <li class="nav-item border border-secondary-subtle ">
+                                  <a class="nav-link text-center menu-item" href="#p42">Facıal Treatments</a>
+                                </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        </nav>
+      </div>
+
+      <main class="flex-grow-1 d-flex justify-content-between">
+        <!-- Previous Button -->
+
+        <button id="prev-btn" class="buttonn btn-prev">
+          <i class="fas fa-arrow-circle-left i"></i>
+        </button>
+
+        <!-- Book -->
+        <div class="flex-grow-1 my-auto">
+          <!-- <div class="container">
+            <div>
+              <button type="button" class="btn-prev">Previous page</button>
+              [<span class="page-current">1</span> of <span class="page-total">-</span>]
+              <button type="button" class="btn-next">Next page</button>
+            </div>
+
+            <div>
+              State: <i class="page-state">read</i>, orientation: <i class="page-orientation">landscape</i>
+            </div>
+          </div> -->
+
+          <div class="container">
+            <div class="flip-book" id="demoBookExample">
+              <div class="page page-cover page-cover-top" data-density="hard">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-01.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <!-- PAGES .... -->
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-02.png" class="img-fluid " alt="">
+                  <div class="page-footer">1</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-03.png" class="img-fluid" alt="">
+                  <div class="page-footer">2</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-04.png" class="img-fluid" alt="">
+                  <div class="page-footer">3</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-05.png" class="img-fluid" alt="">
+                  <div class="page-footer">4</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-06.png" class="img-fluid" alt="">
+                  <div class="page-footer">5</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-07.png" class="img-fluid" alt="">
+                  <div class="page-footer">6</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-08.png" class="img-fluid" alt="">
+                  <div class="page-footer">7</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-09.png" class="img-fluid" alt="">
+                  <div class="page-footer">8</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-10.png" class="img-fluid" alt="">
+                  <div class="page-footer">9</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-14.png" class="img-fluid" alt="">
+                  <div class="page-footer">10</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-11.png" class="img-fluid" alt="">
+                  <div class="page-footer">11</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-12.png" class="img-fluid" alt="">
+                  <div class="page-footer">12</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-13.png" class="img-fluid" alt="">
+                  <!-- <img src="master QR demo last_compressed/master QR demo lastlast22-14.png" class="img-fluid" alt=""> -->
+                  <div class="page-footer">13</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-15.png" class="img-fluid" alt="">
+                  <div class="page-footer">14</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-16.png" class="img-fluid" alt="">
+                  <div class="page-footer">15</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-17.png" class="img-fluid" alt="">
+                  <div class="page-footer">16</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-18.png" class="img-fluid" alt="">
+                  <div class="page-footer">17</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-19.png" class="img-fluid" alt="">
+                  <div class="page-footer">18</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-20.png" class="img-fluid" alt="">
+                  <div class="page-footer">19</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-21.png" class="img-fluid" alt="">
+                  <div class="page-footer">20</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-22.png" class="img-fluid" alt="">
+                  <div class="page-footer">21</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-23.png" class="img-fluid" alt="">
+                  <div class="page-footer">22</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-24.png" class="img-fluid" alt="">
+                  <div class="page-footer">23</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-25.png" class="img-fluid" alt="">
+                  <div class="page-footer">24</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-26.png" class="img-fluid" alt="">
+                  <div class="page-footer">25</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-27.png" class="img-fluid" alt="">
+                  <div class="page-footer">26</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-29.png" class="img-fluid" alt="">
+                  <div class="page-footer">27</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-28.png" class="img-fluid" alt="">
+                  <div class="page-footer">28</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-30.png" class="img-fluid" alt="">
+                  <div class="page-footer">29</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-31.png" class="img-fluid" alt="">
+                  <div class="page-footer">30</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-32.png" class="img-fluid" alt="">
+                  <div class="page-footer">31</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-33.png" class="img-fluid" alt="">
+                  <div class="page-footer">32</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-34.png" class="img-fluid" alt="">
+                  <div class="page-footer">33</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-35.png" class="img-fluid" alt="">
+                  <div class="page-footer">34</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-36.png" class="img-fluid" alt="">
+                  <div class="page-footer">35</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-37.png" class="img-fluid" alt="">
+                  <div class="page-footer">36</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-38.png" class="img-fluid" alt="">
+                  <div class="page-footer">37</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-39.png" class="img-fluid" alt="">
+                  <div class="page-footer">38</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-40.png" class="img-fluid" alt="">
+                  <div class="page-footer">39</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-41.png" class="img-fluid" alt="">
+                  <div class="page-footer">40</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-42.png" class="img-fluid" alt="">
+                  <div class="page-footer">41</div>
+                </div>
+              </div>
+
+              <div class="page">
+                <div class="page-content">
+                  <img src="master QR demo last_compressed/master QR demo lastlast22-43.png" class="img-fluid" alt="">
+                  <div class="page-footer">42</div>
+                </div>
+              </div>
+
+
+
+              <div class="page page-cover page-cover-bottom" data-density="hard">
+                <div class="page-content">
+                  <h2>THE END</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Next Button -->
+
+        <button id="next-btn" class="buttonn btn-next">
+          <i class="fas fa-arrow-circle-right i"></i>
+        </button>
+
+      </main>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Modal -->
+
+
+  <div class="modal1 position-absolute top-100 border-sides p-3 border-secondary fixed mt-4 ms-55">
+    <button class="buttonn">
+      <i class="fa-solid fa-bars fa-xl text-start ms-2" id="openNavbar"></i>
+    </button>
+
+    <button class="buttonn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      <i class="fa-solid fa-share-nodes fa-xl ms-3"></i>
+    </button>
+    <div class="modal fade mt-5" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Paylaş</h1>
+            <button type="button" class="btn-close w-25" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="qrcode_www.accorturkey.com.png" class="img-fluid w-20" alt="">
+            <p class="text-lowercase mt-2">Bizim ile burdan elaqeye kece bilersiz</p>
+          </div>
+
+          <div class="modal-footer justify-content-start">
+            <button type="button" class="btn" data-bs-dismiss="modal"><a
+                href="https://www.facebook.com/moganhotelbakuu/"> <i
+                  class="fa-brands fa-facebook-f fa-2xl"></i></a></button>
+            <button type="button" class="btn"><a href="http://www.instagram.com/mercurebakucity/?locale=it"><i
+                  class="fa-brands fa-instagram"></i></a></button>
+
+            <button type="button" class="btn"><i class="fa-brands fa-square-x-twitter fa-2xl"></i></button></button>
+            <button type="button" class="btn"><i class="fa-brands fa-google-plus fa-2xl"></i></button>
+            <button type="button" class="btn"><i class="fa-regular fa-envelope fa-2xl"></i></button>
+            <button type="button" class="btn"><i class="fa-brands fa-vk fa-2xl"></i></button>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="buttonn" id="downloadButton" onclick="generatePDF()">
+      <i class="fa-solid fa-arrow-down fa-xl ms-3" id="downloadButton" href=""></i>
+    </button>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script> 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.0/html2pdf.bundle.min.js"></script>
+  <!-- <script src="./page-flip.browser.js"></script> -->
+  <script src="./menu-control.js"></script>
+  
+
+  <!-- Custom JS -->
+</body>
+
+</html>
